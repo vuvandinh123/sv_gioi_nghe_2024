@@ -65,7 +65,7 @@ p {
 .image_map {
   width: 100%;
   height: 80%;
-  overflow: hidden;
+  /* overflow: hidden; */
   position: relative;
 }
 .overlay_mouse {
@@ -87,12 +87,14 @@ p {
 }
 .inner-block {
   position: absolute;
-  background: url("../images/map2.png") no-repeat;
-  transform: scale(1.8);
-  background-size: auto;
-  /* background-position:100px -140px; */
-  /* background-position:100px 100px; */
-  background-position: -70px -500px;
+  background: url("../images/map_songsaigon.jpg") no-repeat;
+  /* transform: scale(1.8); */
+  width: 100%;
+  
+  /* background-position:top left 0px; */
+  background-position:left 0 center;
+  /* background-position:bottom right 0; */
+  
   width: 100%;
   height: 100%;
   transition: all 0.5s ease;
@@ -102,18 +104,39 @@ p {
   z-index: 99;
   transition: all 0.5s ease;
 }
+
 #location.center {
-  top: 53%;
-  left: 55%;
+  top: 38%;
+  left: 400px;
 }
 #location.top {
-  top: 47.5%;
-  left: 46.5%;
+  top: 19%;
+  left: 130px;
 }
 #location.bottom {
-  top:55%;
-  left: 52%;
+  top:78%;
+  right: 320px;
 }
+#location.centerMobi {
+  left: 180px;
+  top: 39%;
+}
+#location.topMobi {
+  left: 100px;
+}
+#location.bottomMobi {
+  top: 80%;
+  right: 130px;
+}
+/* @media screen and (max-width: 767px) {
+  .inner-block {
+    background-position: bottom right -190px;
+  }
+  .inner-block.resize{
+    background-position: bottom right -190px;
+  }
+  
+} */
 .btn-common{
   position: absolute;
   z-index: 99;
