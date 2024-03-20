@@ -25,15 +25,12 @@ p {
 }
 .text-l {
   transform: translateX(-30%) translateY(-50%) rotate(-90deg);
-  animation: animationsText .5s ease-in-out infinite;
-
-}
-.text-l:hover{
+  animation: animationsText 0.5s ease-in-out infinite;
 }
 .text-r {
   transform: translateX(30%) translateY(-50%) rotate(-90deg);
   right: 0;
-  animation: animationsText .5s ease-in-out infinite;
+  animation: animationsText 0.5s ease-in-out infinite;
   width: 500px;
 }
 /* contents */
@@ -56,8 +53,8 @@ p {
   background-color: #fff;
   height: 80%;
   width: 60%;
-  /* overflow: hidden; */
   z-index: 10;
+  overflow: hidden;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -65,7 +62,6 @@ p {
 .image_map {
   width: 100%;
   height: 80%;
-  /* overflow: hidden; */
   position: relative;
 }
 .overlay_mouse {
@@ -77,24 +73,16 @@ p {
 }
 .overlay_mouse-top {
   top: 0;
-  background-color: #000;
-  opacity: .3;
 }
 .overlay_mouse-bottom {
   bottom: 0;
-  background-color: #000;
-  opacity: .3;
 }
 .inner-block {
   position: absolute;
   background: url("../images/map_songsaigon.jpg") no-repeat;
-  /* transform: scale(1.8); */
   width: 100%;
-  
-  /* background-position:top left 0px; */
-  background-position:left 0 center;
-  /* background-position:bottom right 0; */
-  
+  background-position: left 0 center;
+
   width: 100%;
   height: 100%;
   transition: all 0.5s ease;
@@ -114,30 +102,10 @@ p {
   left: 130px;
 }
 #location.bottom {
-  top:78%;
+  top: 78%;
   right: 320px;
 }
-#location.centerMobi {
-  left: 180px;
-  top: 39%;
-}
-#location.topMobi {
-  left: 100px;
-}
-#location.bottomMobi {
-  top: 80%;
-  right: 130px;
-}
-/* @media screen and (max-width: 767px) {
-  .inner-block {
-    background-position: bottom right -190px;
-  }
-  .inner-block.resize{
-    background-position: bottom right -190px;
-  }
-  
-} */
-.btn-common{
+.btn-common {
   position: absolute;
   z-index: 99;
   left: 50%;
@@ -153,28 +121,26 @@ p {
   top: 0;
 }
 .btn-down {
- bottom: 0;
+  bottom: 0;
 }
 
 @keyframes animationsFooter {
   0% {
-      transform: translateY(4px);
+    transform: translateY(4px);
   }
   50% {
-      transform: translateY(-4px);
+    transform: translateY(-4px);
   }
   100% {
-      transform: translateY(4px);
+    transform: translateY(4px);
   }
 }
-.logo img{
+.logo img {
   position: absolute;
   cursor: pointer;
   top: 30px;
-  /* transform: translate(0, -50%); */
-
 }
-.logo:hover img{
+.logo:hover img {
   animation: animationsFooter 0.5s ease-in-out infinite;
 }
 #location {
